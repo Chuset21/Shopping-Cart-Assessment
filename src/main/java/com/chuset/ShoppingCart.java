@@ -11,8 +11,8 @@ public class ShoppingCart implements IShoppingCart {
         PRICE_NAME_AMOUNT
     }
 
-    final Map<String, Integer> contents = new LinkedHashMap<>();
-    final Pricer pricer;
+    private final Map<String, Integer> contents = new LinkedHashMap<>();
+    private final Pricer pricer;
 
     public ShoppingCart(Pricer pricer) {
         if (pricer == null) {

@@ -7,7 +7,7 @@ import java.util.Map;
  * A stub implementation - for this exercise, you may disregard that this is incomplete.
  */
 public class Pricer {
-    final Map<String, Integer> pricingDatabase = new HashMap<>(); // stub
+    private final Map<String, Integer> pricingDatabase = new HashMap<>(); // stub
 
     public Pricer() {
         pricingDatabase.put("apple", 100);
