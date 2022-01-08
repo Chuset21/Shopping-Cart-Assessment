@@ -148,5 +148,10 @@ public class ShoppingCartTest {
 
         sc.printReceipt(ShoppingCart.Formatting.PRICE_NAME_AMOUNT);
         assertEquals(String.format("€2.00 - apple - 2%n€2.00 - banana - 1%n€4.00 - total - 3%n"), myOut.toString());
+
+        try {
+            sc.printReceipt(null);
+            fail("IllegalArgumentException was not thrown with formatting = null in #printReceipt, unexpected behavior.");
+        } catch (IllegalArgumentException ignored) {}
     }
 }

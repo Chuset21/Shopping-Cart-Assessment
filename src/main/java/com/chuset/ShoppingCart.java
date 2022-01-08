@@ -40,7 +40,7 @@ public class ShoppingCart implements IShoppingCart {
 
     public void printReceipt(Formatting formatting) {
         if (formatting == null) {
-            throw new IllegalArgumentException("Formatting argument cannot be null"); // TODO test for null formatting argument
+            throw new IllegalArgumentException("Formatting argument cannot be null");
         }
 
         double totalPrice = 0;
